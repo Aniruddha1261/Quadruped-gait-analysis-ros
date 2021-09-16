@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="quadraped_urdf">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.21550981967809 -0.340344569380118 0.224789268166575"
+        rpy="0 0 0" />
+      <mass
+        value="6.7386669726753" />
+      <inertia
+        ixx="0.0374723759532097"
+        ixy="-1.21760986167806E-17"
+        ixz="1.7523347026718E-18"
+        iyy="0.11471012710447"
+        iyz="1.82421277174694E-18"
+        izz="0.148262403911914" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadraped_urdf/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadraped_urdf/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="base_link1">
+    <inertial>
+      <origin
+        xyz="0.0708744638155123 -0.00066611717161702 0.0197891829920333"
+        rpy="0 0 0" />
+      <mass
+        value="0.150184104059423" />
+      <inertia
+        ixx="2.61969818535675E-05"
+        ixy="4.00655713684365E-06"
+        ixz="-3.41353147423397E-07"
+        iyy="0.000447294942960443"
+        iyz="3.12157506249931E-09"
+        izz="0.00046331168625474" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadraped_urdf/meshes/base_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadraped_urdf/meshes/base_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="limb1"
+    type="revolute">
+    <origin
+      xyz="0.36551 -0.17534 0.22479"
+      rpy="1.5708 1.5289 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="base_link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="limb2"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="child1">
+    <inertial>
+      <origin
+        xyz="-0.0423421337754569 3.23721888045858E-08 -0.00243980435674557"
+        rpy="0 0 0" />
+      <mass
+        value="0.0326105791113412" />
+      <inertia
+        ixx="1.71789785370535E-06"
+        ixy="4.93041347085335E-11"
+        ixz="-8.31546053527796E-08"
+        iyy="3.40028737248651E-05"
+        iyz="-4.45808142197675E-12"
+        izz="3.45304858852383E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadraped_urdf/meshes/child1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadraped_urdf/meshes/child1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg1"
+    type="revolute">
+    <origin
+      xyz="0.1615 -0.0015252 0"
+      rpy="3.1416 0 -1.6806" />
+    <parent
+      link="base_link1" />
+    <child
+      link="child1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="c1">
+    <inertial>
+      <origin
+        xyz="0 1.66533453693773E-16 0.0025"
+        rpy="0 0 0" />
+      <mass
+        value="0.0023090706003885" />
+      <inertia
+        ixx="7.15811886120433E-08"
+        ixy="0"
+        ixz="-3.44598368043906E-24"
+        iyy="7.15811886120433E-08"
+        iyz="6.63774731942189E-26"
+        izz="5.65722297095182E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadraped_urdf/meshes/c1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadraped_urdf/meshes/c1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="w1"
+    type="fixed">
+    <origin
+      xyz="-0.11024 0 0"
+      rpy="3.1416 0 -1.6883" />
+    <parent
+      link="child1" />
+    <child
+      link="c1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="base_link2">
+    <inertial>
+      <origin
+        xyz="0.0708744638155124 -0.00066611717161693 0.0197891829920334"
+        rpy="0 0 0" />
+      <mass
+        value="0.150184104059423" />
+      <inertia
+        ixx="2.61969818535675E-05"
+        ixy="4.00655713684331E-06"
+        ixz="-3.41353147423415E-07"
+        iyy="0.000447294942960443"
+        iyz="3.12157506250433E-09"
+        izz="0.00046331168625474" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadraped_urdf/meshes/base_link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadraped_urdf/meshes/base_link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="limb2"
+    type="revolute">
+    <origin
+      xyz="0.06551 -0.17534 0.22479"
+      rpy="-1.5708 1.3877 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="base_link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="child2">
+    <inertial>
+      <origin
+        xyz="-0.0423421341026917 3.08249994140919E-08 -0.00243980328545562"
+        rpy="0 0 0" />
+      <mass
+        value="0.0326105793021524" />
+      <inertia
+        ixx="1.71789761243841E-06"
+        ixy="4.80070961770446E-11"
+        ixz="-8.31542142482826E-08"
+        iyy="3.40028743633875E-05"
+        iyz="-4.5154664715856E-12"
+        izz="3.45304862728481E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadraped_urdf/meshes/child2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadraped_urdf/meshes/child2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg2"
+    type="revolute">
+    <origin
+      xyz="0.1615 -0.0015252 0"
+      rpy="3.1416 0 -1.5399" />
+    <parent
+      link="base_link2" />
+    <child
+      link="child2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="c2">
+    <inertial>
+      <origin
+        xyz="-6.93889390390723E-18 1.38777878078145E-16 0.00250000000000003"
+        rpy="0 0 0" />
+      <mass
+        value="0.0023090706003885" />
+      <inertia
+        ixx="7.15811886120433E-08"
+        ixy="-8.27180612553028E-25"
+        ixz="-1.66699370238415E-24"
+        iyy="7.15811886120433E-08"
+        iyz="2.84129320460458E-26"
+        izz="5.65722297095182E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadraped_urdf/meshes/c2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadraped_urdf/meshes/c2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="w2"
+    type="fixed">
+    <origin
+      xyz="-0.11024 0 0"
+      rpy="3.1416 0 1.2772" />
+    <parent
+      link="child2" />
+    <child
+      link="c2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="base_link3">
+    <inertial>
+      <origin
+        xyz="0.0708744638155124 -0.00066611717161702 -0.0102108170079667"
+        rpy="0 0 0" />
+      <mass
+        value="0.150184104059423" />
+      <inertia
+        ixx="2.61969818535675E-05"
+        ixy="4.00655713684386E-06"
+        ixz="-3.41353147423429E-07"
+        iyy="0.000447294942960443"
+        iyz="3.12157506250925E-09"
+        izz="0.00046331168625474" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadraped_urdf/meshes/base_link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadraped_urdf/meshes/base_link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="limb3"
+    type="revolute">
+    <origin
+      xyz="0.06551 -0.47534 0.22479"
+      rpy="1.5708 1.5101 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="base_link3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="child3">
+    <inertial>
+      <origin
+        xyz="-0.0423421379761998 1.37530411781217E-08 0.00756020849189848"
+        rpy="0 0 0" />
+      <mass
+        value="0.0326105815981048" />
+      <inertia
+        ixx="1.71789597223259E-06"
+        ixy="3.36606727950767E-11"
+        ixz="-8.31499215068541E-08"
+        iyy="3.40028817328098E-05"
+        iyz="-4.79604593391368E-12"
+        izz="3.45304918922E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadraped_urdf/meshes/child3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadraped_urdf/meshes/child3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg3"
+    type="revolute">
+    <origin
+      xyz="0.1615 -0.0015252 -0.02"
+      rpy="3.1416 0 1.6152" />
+    <parent
+      link="base_link3" />
+    <child
+      link="child3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="c3">
+    <inertial>
+      <origin
+        xyz="0 2.77555756156289E-17 -0.00750000000000001"
+        rpy="0 0 0" />
+      <mass
+        value="0.0023090706003885" />
+      <inertia
+        ixx="7.15811886120436E-08"
+        ixy="0"
+        ixz="-1.17226931405602E-38"
+        iyy="7.15811886120436E-08"
+        iyz="-1.36748047209095E-38"
+        izz="5.65722297095183E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadraped_urdf/meshes/c3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadraped_urdf/meshes/c3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="w3"
+    type="fixed">
+    <origin
+      xyz="-0.11024 0 0"
+      rpy="3.1416 0 -1.214" />
+    <parent
+      link="child3" />
+    <child
+      link="c3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="base_link4">
+    <inertial>
+      <origin
+        xyz="0.0708744638155123 -0.000666117171616964 -0.0102108170079667"
+        rpy="0 0 0" />
+      <mass
+        value="0.150184104059423" />
+      <inertia
+        ixx="2.61969818535675E-05"
+        ixy="4.0065571368437E-06"
+        ixz="-3.41353147423419E-07"
+        iyy="0.000447294942960443"
+        iyz="3.12157506250382E-09"
+        izz="0.00046331168625474" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadraped_urdf/meshes/base_link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadraped_urdf/meshes/base_link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="limb4"
+    type="revolute">
+    <origin
+      xyz="0.36551 -0.47534 0.22479"
+      rpy="1.5708 1.5337 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="base_link4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="child4">
+    <inertial>
+      <origin
+        xyz="-0.0423421389689371 1.30603164116838E-08 0.00756020895647952"
+        rpy="0 0 0" />
+      <mass
+        value="0.0326105822893683" />
+      <inertia
+        ixx="1.71789599953009E-06"
+        ixy="3.29731955808396E-11"
+        ixz="-8.3149646172784E-08"
+        iyy="3.40028833498438E-05"
+        iyz="-4.7715354448297E-12"
+        izz="3.45304935070882E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadraped_urdf/meshes/child4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadraped_urdf/meshes/child4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg4"
+    type="revolute">
+    <origin
+      xyz="0.1615 -0.0015252 -0.02"
+      rpy="3.1416 0 1.6097" />
+    <parent
+      link="base_link4" />
+    <child
+      link="child4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="c4">
+    <inertial>
+      <origin
+        xyz="-9.71445146547012E-17 1.66533453693773E-16 -0.00750000000000001"
+        rpy="0 0 0" />
+      <mass
+        value="0.0023090706003885" />
+      <inertia
+        ixx="7.15811886120436E-08"
+        ixy="0"
+        ixz="3.41047606668471E-24"
+        iyy="7.15811886120436E-08"
+        iyz="2.29132470882498E-26"
+        izz="5.65722297095183E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadraped_urdf/meshes/c4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadraped_urdf/meshes/c4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="w4"
+    type="fixed">
+    <origin
+      xyz="-0.11024 0 0"
+      rpy="3.1416 0 -1.243" />
+    <parent
+      link="child4" />
+    <child
+      link="c4" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
