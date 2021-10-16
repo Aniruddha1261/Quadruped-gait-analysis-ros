@@ -1,2 +1,6 @@
-Quadruped-gait-analysis-ros
-To perform teleoperations, forward motion, turning and reversing motion of a quadruped robot in ros using Gazebo simulator.
+# Quadruped-gait-analysis-ros
+
+The aim of this project is to perform teleoperation(keyboard), forward simulation, obstacle avoidance, turning and reverse motion of a quadruped in ROS/ROS2 using Gazebo simulator.
+
+
+
