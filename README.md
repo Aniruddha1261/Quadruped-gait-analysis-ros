@@ -12,8 +12,8 @@
 - [resources](#acknowledgement-and-resources)
 ---
 ## About the project
-_As its name suggests, Quadruped Robots have four legs or limbs and follow the gait patterns of quadruped animals. They are faster and more stable than biped robots. Depending on their leg structure, they can be broadly classified into two categories, Mammal-type and Sprawling-type.
-The aim of this project is to perform teleoperation(keyboard), forward simulation, obstacle avoidance, turning and reverse motion of a quadruped in ROS/ROS2 using Gazebo simulator._
+As its name suggests, Quadruped Robots have four legs or limbs and follow the gait patterns of quadruped animals. They are faster and more stable than biped robots. Depending on their leg structure, they can be broadly classified into two categories, Mammal-type and Sprawling-type.
+The aim of this project is to perform teleoperation(keyboard), forward simulation, obstacle avoidance, turning and reverse motion of a quadruped in ROS/ROS2 using Gazebo simulator.
 #### 1.Tech stack
  - We are using Gazebo simulator for the simulation and motion of robot.
  - For further refrence [gazebo](http://gazebosim.org/)
@@ -69,9 +69,9 @@ The aim of this project is to perform teleoperation(keyboard), forward simulatio
 ![gazebo_simulation](idhar bhi photo)
 
 #### 2.2.2 Command for teleoperation
+press the ```Tab``` after this command  
 
     rostopic pub /cmd_vel geometry msgs/Twist "linear:
-
 image after publishing
 ![gazebo](idhar link dalna hai video ka)
 
@@ -80,4 +80,5 @@ Quadruped robots can be made to walk on planes as well as rough surfaces. They h
 They can be used for transportation on a small scale like for household purposes as well as in factories.
 ## Future works
 ## Contributors
+[Chaitanya Deshpande](https://github.com/ChaitanyaSRA)
 ## Acknowledgements and resources
