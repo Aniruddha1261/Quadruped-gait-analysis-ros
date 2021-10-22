@@ -69,15 +69,14 @@ The aim of this project is to perform teleoperation(keyboard), forward simulatio
 #### 2.2.1 Run the Gazebo environment:
 
     roslaunch champ_config gazebo.launch 
-![gazebo_simulation](idhar bhi photo)
+![gazebo_simulation](https://github.com/Aniruddha1261/Quadruped-gait-analysis-ros/blob/f9d751f21d9cd5b621717ff34094627b9a2b8f81/img%20and%20video%20after%20teleop/Screenshot%20from%202021-10-22%2013-53-54.png)
 
 #### 2.2.2 Command for teleoperation
 press the ```Tab``` after this command  
 
     rostopic pub /cmd_vel geometry msgs/Twist "linear:
-image after publishing
-![gazebo](idhar link dalna hai video ka)
-
+after publishing teleop operations
+![gazebo](https://github.com/Aniruddha1261/Quadruped-gait-analysis-ros/blob/be34be505820a0c0c37cd2790139c1e614646442/img%20and%20video%20after%20teleop/video.mp4)
 ## Results 
 Quadruped robots can be made to walk on planes as well as rough surfaces. They have the most stable configuration among the multi legged robots.
 They can be used for transportation on a small scale like for household purposes as well as in factories.
