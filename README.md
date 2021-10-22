@@ -6,10 +6,13 @@
 ### Table of content
 
 - [About the project](#about-the-project)
-   - [Tech stack](#tech-stack)
-   - [File structure](#file-structure)
+    - [Tech stack](#1tech-stack)
+    - [File structure](#file-structure)
 - [Getting Started](#getting-started)
-- [resources](#acknowledgement-and-resources)
+   - [Installations](#1-installations)
+   - [Quick start](#2-quick-start)
+- [Results](#results)
+- [resources](#acknowledgements-and-resources)
 ---
 ## About the project
 As its name suggests, Quadruped Robots have four legs or limbs and follow the gait patterns of quadruped animals. They are faster and more stable than biped robots. Depending on their leg structure, they can be broadly classified into two categories, Mammal-type and Sprawling-type.
@@ -34,7 +37,7 @@ The aim of this project is to perform teleoperation(keyboard), forward simulatio
 1. **Ros noetic**
 2. **Gazebo**
 3. **Rviz**
-## 1. Installations
+### 1. Installations
 
    ### 1.1 Cloning the git repo of champ and installing all dependencies:
      
