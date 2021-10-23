@@ -4,13 +4,13 @@
 ### Table of content
 
 - [About the project](#about-the-project)
-    - [Tech stack](#1tech-stack)
-    - [File structure](#file-structure)
+    - [Tech stack](#tech-stack)
+    <!-- - [File structure](#file-structure) -->
 - [Getting Started](#getting-started)
    - [Installations](#1-installations)
    - [Quick start](#2-quick-start)
 - [Results](#results)
-- [resources](#acknowledgements-and-resources)
+- [resources](#resources)
 ---
 ## About the project
 As its name suggests, Quadruped Robots have four legs or limbs and follow the gait patterns of quadruped animals. They are faster and more stable than biped robots. Depending on their leg structure, they can be broadly classified into two categories, Mammal-type and Sprawling-type.
@@ -31,7 +31,6 @@ The aim of this project is to perform teleoperation(keyboard), forward simulatio
 - Ros.
 - Simulation (Gazebo)
 
-### File Structure
 ## Getting Started
 ### Prerequisites
 1. **Ros noetic**
