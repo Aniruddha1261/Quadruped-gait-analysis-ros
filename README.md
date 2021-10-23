@@ -76,7 +76,7 @@ press the ```Tab``` after this command
 
     rostopic pub /cmd_vel geometry msgs/Twist "linear:
 after publishing teleop operations
-[![gazebo](https://github.com/Aniruddha1261/Quadruped-gait-analysis-ros/blob/cfa048cab0721c0802c7535bf7efbfebb136246a/img%20and%20video%20after%20teleop/Screenshot%20from%202021-10-22%2014-29-55.png)](https://github.com/Aniruddha1261/Quadruped-gait-analysis-ros/blob/be34be505820a0c0c37cd2790139c1e614646442/img%20and%20video%20after%20teleop/video.mp4)
+[![gazebo](https://github.com/Aniruddha1261/Quadruped-gait-analysis-ros/blob/c4bb1e4bbac1265e0eeed3668f1c279e53175240/img%20and%20video%20after%20teleop/pic%202.jpeg)](https://github.com/Aniruddha1261/Quadruped-gait-analysis-ros/blob/be34be505820a0c0c37cd2790139c1e614646442/img%20and%20video%20after%20teleop/video.mp4)
 ## Results 
 Quadruped robots can be made to walk on planes as well as rough surfaces. They have the most stable configuration among the multi legged robots.
 They can be used for transportation on a small scale like for household purposes as well as in factories.
@@ -98,7 +98,7 @@ They can be used for transportation on a small scale like for household purposes
    - [website](https://cjme.springeropen.com/articles/10.1186/s10033-019-0321-2)
    - [Git repo](https://github.com/chaitravi-ce/Eklavya-QuadrupedMotionSimulation)
 - #### Researh papers
-   - []()
-   - []()
-   - []()
-   - []()
+   - [Kinematics](https://github.com/Aniruddha1261/Quadruped-gait-analysis-ros/blob/c4bb1e4bbac1265e0eeed3668f1c279e53175240/Resources/4c1fa16c13baef9e3102007eb48ca039-1.pdf)
+   - [Inverse-Kinematic](https://github.com/Aniruddha1261/Quadruped-gait-analysis-ros/blob/c4bb1e4bbac1265e0eeed3668f1c279e53175240/Resources/Inverse-Kinematic-Analysis-Of-A-Quadruped-Robot.pdf)
+   - [Swidwa Quadruped Gait Thesis](https://github.com/Aniruddha1261/Quadruped-gait-analysis-ros/blob/c4bb1e4bbac1265e0eeed3668f1c279e53175240/Resources/Swidwa_Quadruped_Gait_Thesis-2.pdf)
+   - [Trotting Gait](https://github.com/Aniruddha1261/Quadruped-gait-analysis-ros/blob/c4bb1e4bbac1265e0eeed3668f1c279e53175240/Resources/TrottingGaitPlanningandImplementationforaLittleQuadrupedRobot.pdf)
