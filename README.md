@@ -47,8 +47,7 @@ The aim of this project is to perform teleoperation(keyboard), forward simulatio
      
     sudo apt install -y python-rosdep
     cd <your_ws>/src
-    git clone --recursive https://github.com/chvmp/champ
-    git clone https://github.com/chvmp/champ_teleop
+    git clone https://github.com/Aniruddha1261/Quadruped-gait-analysis-ros.git
     cd ..
     rosdep install --from-paths src --ignore-src -r -y
   
