@@ -2,15 +2,20 @@
 ---
 
 ### Table of content
-
+- [project]()
 - [About the project](#about-the-project)
     - [Tech stack](#tech-stack)
     <!-- - [File structure](#file-structure) -->
 - [Getting Started](#getting-started)
+   - [Prerequisites and installations](#prerequisites)
    - [Installations](#1-installations)
-   - [Quick start](#2-quick-start)
+   - [Execution](#2-execution)
 - [Results](#results)
+- [Future Works](#future-works)
+- [Contributors](#contributors)
+- [Acknowledgement](#acknowledgements)
 - [resources](#resources)
+- [Licence](#licence)
 ---
 ## About the project
 As its name suggests, Quadruped Robots have four legs or limbs and follow the gait patterns of quadruped animals. They are faster and more stable than biped robots. Depending on their leg structure, they can be broadly classified into two categories, Mammal-type and Sprawling-type.
@@ -53,7 +58,7 @@ The aim of this project is to perform teleoperation(keyboard), forward simulatio
     source <your_ws>/devel/setup.bash
 
 
-### 2. Quick Start
+### 2. Execution
    ### 2.1 Walking demo in RVIZ:
 
 #### 2.1.1 Run the base driver:
@@ -75,7 +80,7 @@ press the ```Tab``` after this command
 
     rostopic pub /cmd_vel geometry msgs/Twist "linear:
 after publishing teleop operations
-[![gazebo](https://github.com/Aniruddha1261/Quadruped-gait-analysis-ros/blob/ad8d9528a5534a0d9fa87060923a305cf70d397e/img%20and%20video%20after%20teleop/video%20preview.PNG)](https://drive.google.com/file/d/1nYsU7giKNVJ5WPJzR45nCuP3_TpXaq0G/view?usp=sharing)
+[![gazebo](https://github.com/Aniruddha1261/Quadruped-gait-analysis-ros/blob/c4bb1e4bbac1265e0eeed3668f1c279e53175240/img%20and%20video%20after%20teleop/pic%202.jpeg)](https://drive.google.com/file/d/1-4tTh6GlYbAnATi6XE0_TzINrJ437D7K/view?usp=sharing)
 ## Results 
 Quadruped robots can be made to walk on planes as well as rough surfaces. They have the most stable configuration among the multi legged robots.
 They can be used for transportation on a small scale like for household purposes as well as in factories.
@@ -106,3 +111,4 @@ They can be used for transportation on a small scale like for household purposes
    - [Inverse-Kinematic](https://github.com/Aniruddha1261/Quadruped-gait-analysis-ros/blob/c4bb1e4bbac1265e0eeed3668f1c279e53175240/Resources/Inverse-Kinematic-Analysis-Of-A-Quadruped-Robot.pdf)
    - [Swidwa Quadruped Gait Thesis](https://github.com/Aniruddha1261/Quadruped-gait-analysis-ros/blob/c4bb1e4bbac1265e0eeed3668f1c279e53175240/Resources/Swidwa_Quadruped_Gait_Thesis-2.pdf)
    - [Trotting Gait](https://github.com/Aniruddha1261/Quadruped-gait-analysis-ros/blob/c4bb1e4bbac1265e0eeed3668f1c279e53175240/Resources/TrottingGaitPlanningandImplementationforaLittleQuadrupedRobot.pdf)
+#### Licence
