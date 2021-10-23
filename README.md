@@ -20,6 +20,10 @@
 ## About the project
 As its name suggests, Quadruped Robots have four legs or limbs and follow the gait patterns of quadruped animals. They are faster and more stable than biped robots. Depending on their leg structure, they can be broadly classified into two categories, Mammal-type and Sprawling-type.
 The aim of this project is to perform teleoperation(keyboard), forward simulation, obstacle avoidance, turning and reverse motion of a quadruped in ROS/ROS2 using Gazebo simulator.
+### Theory
+   A Quadruped robot is a 4 legged robot which basically consists of a plane torso and 4 legs which have a revolute joint between them. In our case, the degree of freedom of the robot is 8. Quadruped robot simulation includes the detailed study of gaits and gait patterns. To make a quadruped robot move, we have to study about the gaits and plan the gaits for our tobot. It also includes the study of forward and inverse kinematics. Equations of forward and inverse kinematics are to be found for determination of position and configuration of legs. After the gait planning and implementation of forward and inverse kinematics, the robot is made to simulate in Gazebo simulator with the help of Ros.  
+- #### Gaits:  
+A quadruped robot can walk with statically and dynamically stable gaits. In the statically stable gait, each leg of the robot is lifted up and down sequentially, and there are three stance legs at the least at any moment. This type of gait is named creeping gaits. One gait cycle can be divided into eight different periods of movement. At the beginning of walking, the initial equivalent where four legs are in the stance phase. When one of the legs is lifted, it is transferred to the swing phase; we call this period the step forward stage. In this stage, the equivalent mechanism is. From this, the leg falls and is in contact with the ground until the next leg lifts off; this period is called the switching stage. The equivalent mechanism at this moment exhibits the same configuration as that of the initial period; however, the legs contain different position parameters with the initial period. Four legs of the quadruped robot repeat the motion individually in a certain order from the stance phase to the swing phase, to achieve walking using creeping gait. The step forward stage and switching stage occur alternately while the robot walks. The locomotion of the quadruped robot can be regarded as the movement of these series equivalent mechanisms. The figure below shows the sequence of equivalent mechanisms in one gait cycle. The efficiency of this gait is low because its minimum duty factor is 3/4.
 #### Tech stack
  - We are using Gazebo simulator for the simulation and motion of robot.
  - For further refrence [gazebo](http://gazebosim.org/)
@@ -43,7 +47,7 @@ The aim of this project is to perform teleoperation(keyboard), forward simulatio
 3. **Rviz**
 ### 1. Installations
 
-   ### 1.1 Cloning the git repo of champ and installing all dependencies:
+   ### 1.1 Cloning this git repo and installing all dependencies:
      
     sudo apt install -y python-rosdep
     cd <your_ws>/src
@@ -111,3 +115,4 @@ They can be used for transportation on a small scale like for household purposes
    - [Swidwa Quadruped Gait Thesis](https://github.com/Aniruddha1261/Quadruped-gait-analysis-ros/blob/c4bb1e4bbac1265e0eeed3668f1c279e53175240/Resources/Swidwa_Quadruped_Gait_Thesis-2.pdf)
    - [Trotting Gait](https://github.com/Aniruddha1261/Quadruped-gait-analysis-ros/blob/c4bb1e4bbac1265e0eeed3668f1c279e53175240/Resources/TrottingGaitPlanningandImplementationforaLittleQuadrupedRobot.pdf)
 #### Licence
+[MIT licence](https://opensource.org/licenses/MIT)
