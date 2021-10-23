@@ -75,7 +75,7 @@ press the ```Tab``` after this command
 
     rostopic pub /cmd_vel geometry msgs/Twist "linear:
 after publishing teleop operations
-[![gazebo](https://github.com/Aniruddha1261/Quadruped-gait-analysis-ros/blob/c4bb1e4bbac1265e0eeed3668f1c279e53175240/img%20and%20video%20after%20teleop/pic%202.jpeg)](https://drive.google.com/file/d/1-4tTh6GlYbAnATi6XE0_TzINrJ437D7K/view?usp=sharing)
+[![gazebo](https://github.com/Aniruddha1261/Quadruped-gait-analysis-ros/blob/ad8d9528a5534a0d9fa87060923a305cf70d397e/img%20and%20video%20after%20teleop/video%20preview.PNG)](https://drive.google.com/file/d/1-4tTh6GlYbAnATi6XE0_TzINrJ437D7K/view?usp=sharing)
 ## Results 
 Quadruped robots can be made to walk on planes as well as rough surfaces. They have the most stable configuration among the multi legged robots.
 They can be used for transportation on a small scale like for household purposes as well as in factories.
