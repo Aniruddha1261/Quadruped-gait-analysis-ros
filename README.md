@@ -84,3 +84,21 @@ They can be used for transportation on a small scale like for household purposes
 ## Contributors
 [Chaitanya Deshpande](https://github.com/ChaitanyaSRA)
 ## Acknowledgements and resources
+
+- [URDF exporting](https://youtu.be/T7X_p_KMwus)
+- [Champ setup](https://github.com/chvmp/champ_teleop)
+- [Ros](https://www.ros.org/)
+- [Gazebo](http://gazebosim.org/)
+- #### Teleoperations in Gazebo
+   - [Youtube](https://www.youtube.com/watch?v=ufYxkNnEFYw)
+   - [Robotics.com](https://www.generationrobots.com/blog/en/robotic-simulation-scenarios-with-gazebo-and-ros/)
+   - [gazebosim.org](http://gazebosim.org/tutorials?tut=set_velocity)
+   - [Velocity of joints](https://youtube.com/playlist?list=PLK0b4e05Lnzah3QAIsdb0JxAY21YypdZl)
+- #### Gait Analysis
+   - [website](https://cjme.springeropen.com/articles/10.1186/s10033-019-0321-2)
+   - [Git repo](https://github.com/chaitravi-ce/Eklavya-QuadrupedMotionSimulation)
+- #### Researh papers
+   - []()
+   - []()
+   - []()
+   - []()
