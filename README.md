@@ -5,7 +5,7 @@
 - [project]()
 - [About the project](#about-the-project)
     - [Tech stack](#tech-stack)
-    <!-- - [File structure](#file-structure) -->
+    - [File structure](#file-structure) 
 - [Getting Started](#getting-started)
    - [Prerequisites and installations](#prerequisites)
    - [Installations](#1-installations)
@@ -27,9 +27,9 @@ A quadruped robot can walk with statically and dynamically stable gaits. In the 
 #### Tech stack
  - We are using Gazebo simulator for the simulation and motion of robot.
  - For further refrence [gazebo](http://gazebosim.org/)
-<!-- #### 2.File structure 
-- [Resources]()
-- [images and video]() -->
+#### 2.File structure 
+ []()  
+ []()
 
     
 ## Domains:
