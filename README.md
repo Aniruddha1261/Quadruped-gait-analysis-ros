@@ -1,8 +1,6 @@
 # Quadraped-gait-analysis-ros
 ---
 
-## Domains:
-
 ### Table of content
 
 - [About the project](#about-the-project)
@@ -17,10 +15,12 @@
 ## About the project
 As its name suggests, Quadruped Robots have four legs or limbs and follow the gait patterns of quadruped animals. They are faster and more stable than biped robots. Depending on their leg structure, they can be broadly classified into two categories, Mammal-type and Sprawling-type.
 The aim of this project is to perform teleoperation(keyboard), forward simulation, obstacle avoidance, turning and reverse motion of a quadruped in ROS/ROS2 using Gazebo simulator.
-#### 1.Tech stack
+#### Tech stack
  - We are using Gazebo simulator for the simulation and motion of robot.
  - For further refrence [gazebo](http://gazebosim.org/)
-#### 2.File structure 
+<!-- #### 2.File structure 
+- [Resources]()
+- [images and video]() -->
 
     
 ## Domains:
@@ -81,14 +81,19 @@ after publishing teleop operations
 Quadruped robots can be made to walk on planes as well as rough surfaces. They have the most stable configuration among the multi legged robots.
 They can be used for transportation on a small scale like for household purposes as well as in factories.
 ## Future works
+- Forward Simulation
+- Obstracle Avoidance
 ## Contributors
-[Chaitanya Deshpande](https://github.com/ChaitanyaSRA)
-## Acknowledgements and resources
+- [Chaitanya Deshpande](https://github.com/ChaitanyaSRA)
+- [Aniruddha Thakre](https://github.com/Aniruddha1261)
+## Acknowledgements 
+- #### [SRA VJTI](https://sravjti.in/) Eklavya 2021
+## Resources
 
-- [URDF exporting](https://youtu.be/T7X_p_KMwus)
-- [Champ setup](https://github.com/chvmp/champ_teleop)
-- [Ros](https://www.ros.org/)
-- [Gazebo](http://gazebosim.org/)
+- #### [URDF exporting](https://youtu.be/T7X_p_KMwus)
+- #### [Champ setup](https://github.com/chvmp/champ_teleop)
+- #### [Ros](https://www.ros.org/)
+- #### [Gazebo](http://gazebosim.org/)
 - #### Teleoperations in Gazebo
    - [Youtube](https://www.youtube.com/watch?v=ufYxkNnEFYw)
    - [Robotics.com](https://www.generationrobots.com/blog/en/robotic-simulation-scenarios-with-gazebo-and-ros/)
