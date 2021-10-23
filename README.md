@@ -4,6 +4,7 @@
 ### Table of content
 - [project]()
 - [About the project](#about-the-project)
+    - [Theory](#theory)
     - [Tech stack](#tech-stack)
     - [File structure](#file-structure) 
 - [Getting Started](#getting-started)
@@ -27,9 +28,9 @@ A quadruped robot can walk with statically and dynamically stable gaits. In the 
 #### Tech stack
  - We are using Gazebo simulator for the simulation and motion of robot.
  - For further refrence [gazebo](http://gazebosim.org/)
-#### 2.File structure 
- []()  
- []()
+#### File structure 
+ ![](https://github.com/Aniruddha1261/Quadruped-gait-analysis-ros/blob/9f77b1ad9f48fbf106736620f9b0c5b711b95bee/img%20and%20video%20after%20teleop/Tree1.PNG)  
+ ![](https://github.com/Aniruddha1261/Quadruped-gait-analysis-ros/blob/9f77b1ad9f48fbf106736620f9b0c5b711b95bee/img%20and%20video%20after%20teleop/Tree2.PNG)
 
     
 ## Domains:
