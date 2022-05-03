@@ -1,4 +1,4 @@
-# Quadraped-gait-analysis-ros
+# Quadruped-gait-analysis-ros
 ---
 
 ### Table of content
